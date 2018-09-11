@@ -33,5 +33,5 @@ MyDocuments\SQL_reports. Raportul de executare a planului trebuie sa fie adăuga
 <img src = "img15.png"/>
 <img src = "img16.png"/>
 <img src = "img17.png"/>
-<img src = "img18.png"/>
+<img src = "img18.png"/> 
 <img src = "img19.png"/>
