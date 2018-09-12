@@ -5,4 +5,4 @@ Raspuns: b)116.2
 Raspuns: DECIMAL(2,1).
 3. Creati o baza de date numita Universitatea cu proprietati implicite. In cadrul acestei baze de date, creati tabelele (grupe, discipline,studenti, profesori,studenti_reusita).
 Diagrama bazei de date:
-<img src= "diagrame.png"/>
+<img src= "diagrama.png"/>
