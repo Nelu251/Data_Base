@@ -1,9 +1,9 @@
 # Sarcina
-##Sa se scrie interogarile in limbajul SQL si sa se afiseze raspunsurile la aceste interogari:
+## Sa se scrie interogarile in limbajul SQL si sa se afiseze raspunsurile la aceste interogari:
 
-**Interogarile realizate sunt cu indicii 5, 18, 23, 35, 38.**
+** Interogarile realizate sunt cu indicii 5, 18, 23, 35, 38. **
 
-*5.Sa se afișeze lista studentilor al caror nume se termina in "u" *
+* 5.Sa se afișeze lista studentilor al caror nume se termina in "u" *
 <img src = "quiery1.png"/>
 
 *18. Afitati numele si prenumele profesorilor, care au predat doar discipline cu o incarcare orara mai mica de 60 de ore.* 
