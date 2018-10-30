@@ -17,7 +17,7 @@ Sa se foloseasca variabilele.**
 
 **2.2**
 
-![quiery2.2L5] (https://github.com/nadiusa/Data_Base/blob/master/Lab5/sourcephoto/quiery2.2L5.png)
+![quiery2.2L5](https://github.com/nadiusa/Data_Base/blob/master/Lab5/sourcephoto/quiery2.2L5.png)
 
 **3.Rezolvati aceesi sarcina, 1, apeland la structura selectiva CASE.**
 
