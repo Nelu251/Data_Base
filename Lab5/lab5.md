@@ -12,8 +12,6 @@
 a studentului la primul test al disciplinei Baze de date, folosind structura de altemativa IF. .. ELSE. 
 Sa se foloseasca variabilele.**
 
-**2.1**
-
 ![quiery2.1L5](https://github.com/nadiusa/Data_Base/blob/master/Lab5/sourcephoto/quiery2.1L5.png)
 ![quiery2.2L5](https://github.com/nadiusa/Data_Base/blob/master/Lab5/sourcephoto/quiery2.2L5.png)
 
