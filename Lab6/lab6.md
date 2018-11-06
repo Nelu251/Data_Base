@@ -49,9 +49,8 @@ Adresa Pastala Profesor Adresa 2
 In coloana Localitate sa fie inserata doar informatia despre denumirea localitatii din coloana-sursa Adresa_Postala_Profesor. 
 In coloana Adresa_l, doar denumirea strazii. in coloana Adresa_2, sa se pastreze numarul casei si (posibil) a apartamentului.**
 
-![photo5](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.5.1.PNG)
-![photo52](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.5.2.PNG)
-![photo53](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.5.3.PNG)
+![photo5](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.5.11.PNG)
+![photo52](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.5.22.PNG)
 
 **6. Sa se insereze datele in tabelul orarul pentru Grupa= 'CIB171' (Id_ Grupa= 1) pentru ziua de luni.
  Toate lectiile vor avea loc iN blocul de studii 'B'. Mai jos, sunt prezentate detaliile de inserare:
