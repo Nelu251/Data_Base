@@ -113,36 +113,6 @@ CREATE TABLE profesori_new(  Id_Profesor INT NOT NULL,
 			   			   CONSTRAINT [PK_profesori_new] PRIMARY KEY CLUSTERED 
                            (Id_Profesor )) ON [PRIMARY];
 
-CREATE FUNCTION INSTR (@str VARCHAR(8000), @substr VARCHAR(255), @start INT, @occurrence INT)
-  RETURNS INT
-  AS
-  BEGIN
-	DECLARE @found INT = @occurrence,
-			@pos INT = @start;
- 
-	WHILE 1=1 
-	BEGIN
-		-- Find the next occurrence
-		SET @pos = CHARINDEX(@substr, @str, @pos);
- 
-		-- Nothing found
-		IF @pos IS NULL OR @pos = 0
-			RETURN @pos;
- 
-		-- The required occurrence found
-		IF @found = 1
-			BREAK;
- 
-		-- Prepare to find another one occurrence
-		SET @found = @found - 1;
-		SET @pos = @pos + 1;
-	END
- 
-	RETURN @pos;
-  END
-  GO
-
-
 INSERT INTO profesori_new(Id_Profesor, Nume_Profesor, Prenume_Profesor, Localitate, Adresa_1, Adresa_2)
  SELECT Id_Profesor
         , Nume_Profesor
