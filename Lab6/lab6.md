@@ -2,6 +2,7 @@
 ## Laboratory 6
 
 *Sarcini Practice*
+
 **1.Sa se scrie o instructiune T-SQL, care ar popula coloana Adresa _ Postala _ Profesor 
  din tabelul profesori cu valoarea 'mun. Chisinau', unde adresa este necunoscuta.**
  
