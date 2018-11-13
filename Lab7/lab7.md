@@ -18,7 +18,7 @@
 
 ![img4](https://github.com/nadiusa/Data_Base/blob/master/Lab7/Lab7/img7.3.PNG)
 
-**4.Tabelul orarul trebuie sa contina ~i 2 chei secundare: (Zi, Ora, Id_ Grupa, Id_ Profesor) ~i (Zi, Ora, ld_Grupa, ld_Disciplina).**
+**4.Tabelul orarul trebuie sa contina si 2 chei secundare: (Zi, Ora, Id_ Grupa, Id_ Profesor) si (Zi, Ora, ld_Grupa, ld_Disciplina).**
 
 ![img5](https://github.com/nadiusa/Data_Base/blob/master/Lab7/Lab7/img7.4.PNG)
 
