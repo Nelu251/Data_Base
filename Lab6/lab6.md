@@ -71,10 +71,16 @@ lectie #3 (Ora ='13:00', Disciplina ='Baze de date', Profesor = 'Micu Elena')**
 ![photo72](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.7.2.PNG)
 
 **8. Sa se scrie interogarile de creare a indecsilor asupra tabelelor din baza de date universitatea pentru a asigura o performanta sporita la executarea interogarilor SELECT din Lucrarea practica 4. Rezultatele optimizarii sa fie analizate in baza planurilor de executie, pana la si dupa crearea indecsilor. Indecsii nou-creati sa fie plasati fizic in grupul de fisiere userdatafgroupl (Crearea si intrefinerea bazei de date - sectiunea 2.2.2)**
-
+![photo83](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/quiery1.ix.PNG)
+![photo88](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/quiery1.ix.r.PNG)
+![photo87](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/quiery2.ix.PNG)
+![photo86](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/quiery2.ix.ep.PNG)
+![photo85](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/quiery2.ix.ep.r.PNG)
+![photo84](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/quiery2.ix.r.PNG)
+![photo883](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/quiery3.ix.PNG)
+![photo882](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/quiery3.ix.r.PNG)
 ![photo81](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.8.1.PNG)
 ![photo82](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.8.2.PNG)
-![photo83](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.8.3.PNG)
 
 
 
