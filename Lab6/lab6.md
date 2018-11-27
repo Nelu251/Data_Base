@@ -81,6 +81,8 @@ lectie #3 (Ora ='13:00', Disciplina ='Baze de date', Profesor = 'Micu Elena')**
 ![photo882](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/quiery3.ix.r.PNG)
 ![photo81](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.8.1.PNG)
 ![photo82](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/lab6.8.2.PNG)
+![](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/8.PNG
+![](https://github.com/nadiusa/Data_Base/blob/master/Lab6/lab6/88.PNG)
 
 
 
