@@ -63,7 +63,7 @@ FROM studenti.studenti
 WHERE studenti.studenti.Nume_Student like '%u'
 
  --Quiery 18.
- 
+ ```sql
  SELECT distinct cadre_didactice.profesori.Nume_Profesor, cadre_didactice.profesori.Prenume_Profesor
  
 FROM studenti.studenti_reusita
@@ -79,6 +79,7 @@ SELECT discipline.Id_Disciplina
 FROM plan_studii.discipline
 
 WHERE discipline.Nr_ore_plan_disciplina>60)
+```
 
 --Quiery38.
 
