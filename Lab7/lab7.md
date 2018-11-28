@@ -31,18 +31,13 @@
 ![img5.3](https://github.com/nadiusa/Data_Base/blob/master/Lab7/Lab7/img7.5.3.PNG)
 
 **6.Creati, in baza de date universitatea, trei scheme noi: cadre_didactice, plan_studii si studenti. Transferati tabelul profesori din schema dbo in schema cadre didactice, tinand cont de dependentelor definite asupra tabelului mentionat. in acelasi mod sa se trateze tabelele orarul, discipline care apartin schemei plan_studii si tabelele studenti, studenti_reusita, care apartin schemei studenti. Se scrie instructiunile SQL respective.**
+```sql
 CREATE SCHEMA cadre_didactice;
-
  go
- 
  CREATE SCHEMA plan_studii;
- 
  go
- 
  CREATE SCHEMA studenti; 
- 
  go
- 
  ALTER SCHEMA cadre_didactice TRANSFER dbo.profesori 
  
  ALTER SCHEMA plan_studii TRANSFER dbo.orarul
@@ -50,10 +45,10 @@ CREATE SCHEMA cadre_didactice;
  ALTER SCHEMA plan_studii TRANSFER dbo.discipline
  
  ALTER SCHEMA studenti TRANSFER dbo.studenti_reusita 
- 
+ ```
  
  **7. Modificati 2-3 interogari asupra bazei de date universitatea prezentate in capitolul 4 astfel ca numele tabelelor accesate sa fie descrise in mod explicit, tinand cont de faptul ca tabelele au fost mutate in scheme noi.**
- 
+ ```sql 
  --Quiery5.Sa se afișeze lista studentilor al caror nume se termina in "u" 
  
 SELECT studenti.studenti.Nume_Student, studenti.studenti.Prenume_Student
@@ -61,6 +56,7 @@ SELECT studenti.studenti.Nume_Student, studenti.studenti.Prenume_Student
 FROM studenti.studenti
 
 WHERE studenti.studenti.Nume_Student like '%u'
+```
 
  --Quiery 18.
  ```sql
@@ -79,7 +75,6 @@ SELECT discipline.Id_Disciplina
 FROM plan_studii.discipline
 
 WHERE discipline.Nr_ore_plan_disciplina>60)
-```
 
 --Quiery38.
 
@@ -104,10 +99,10 @@ INNER JOIN plan_studii.discipline
 On studenti.studenti_reusita.Id_Disciplina=plan_studii.discipline.Id_Disciplina
 
 Where  plan_studii.discipline.disciplina='Baze de date')
-
+```
 
 **8. Creati sinonimele respective pentru a simplifica interogarile construite in exercitiul  precedent si reformulati interogarile, folosind sinonimele create.**
-
+```sql
 CREATE SYNONYM studenti_1 FOR  studenti.studenti;
 
 CREATE SYNONYM studenti_reu FOR  studenti.studenti_reusita;
@@ -165,6 +160,6 @@ INNER JOIN discipline_1
 On studenti_reu.Id_Disciplina=discipline_1.Id_Disciplina
 
 Where disciplina='Baze de date')
-
+```
 
 
