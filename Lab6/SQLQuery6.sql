@@ -220,6 +220,35 @@ GO
 CREATE NONCLUSTERED INDEX pk_id_disciplina ON
 discipline (id_disciplina)
 ON [userdatafgroupl]
+										
+CHECKPOINT;
+GO
+DBCC DROPCLEANBUFFERS;
+DBCC FREESYSTEMCACHE('ALL');
+GO
+SET STATISTICS IO ON
+SET STATISTICS TIME ON
+SELECT distinct Nume_Student, Prenume_Student, avg(nota) Average
+FROM studenti.studenti
+INNER JOIN studenti.studenti_reusita ON studenti.Id_Student=studenti_reusita.Id_Student
+where Id_Disciplina Not IN (
+SELECT  distinct ID_disciplina
+FROM studenti.studenti_reusita
+WHERE Id_Profesor IN
+(SELECT Id_Profesor
+FROM cadre_didactice.profesori
+where Adresa_Postala_Profesor  like '%31 August%')
+and Nota<5)
+group by Nume_Student, Prenume_Student;
+SET STATISTICS TIME OFF
+
+CREATE NONCLUSTERED INDEX ix_disciplina ON
+plan_studii.discipline (id_disciplina, disciplina)
+ON [userdatafgroupl]
+
+CREATE COLUMNSTORE INDEX ix_profesor ON
+cadre_didactice.profesori (id_profesor, Adresa_Postala_Profesor)
+ON [userdatafgroupl]
 
 
 --------------------------------------------------------------------------------------------------------------------------------
