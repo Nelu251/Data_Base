@@ -115,7 +115,39 @@ select * from cadre_didactice.profesori
 --AND   profesori.Id_Profesor=studenti_reusita.Id_Profesor
 --AND   studenti_reusita.Id_Profesor=103
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---6. Sa se creeze functii definite de utilizator in baza exercitiilor (2 exercitii) din capitolul 4. Parametrii de intrare 
+--5. Sa se creeze o procedura stocata care ar forma o lista cu primii 3 cei mai buni studenti la o disciplina, Si acestor studenti sa le fie marita nota 
+-- la examenul final cu un punct (nota maximala posibila este 10). In calitate de parametru de intrare, va servi denumirea disciplinei.
+-- Procedura sa returneze urmatoarele campuri: Cod_ Grupa, Nume_Prenume_Student, Disciplina, Nota _ Veche, Nota _ Noua. 
+CREATE PROCEDURE TOP_STUDENTS
+						    
+GO
+CREATE PROCEDURE TOP_STUDENTS_P
+AS 
+SELECT * FROM TOP_STUDENTS('Sisteme de calcul')
+GO
+CREATE FUNCTION TOP_STUDENTS(@DISCIPLINA VARCHAR(50)) 
+RETURNS TABLE 
+AS 
+RETURN 
+SELECT DISTINCT TOP(3) Cod_Grupa,Nume_Student,
+                       Prenume_student, 
+					   Disciplina, 
+					   Nota as Nota_Veche, 
+					   CASE 
+					   WHEN Nota=10 THEN NOTA 
+					   ELSE NOTA+1
+					   END AS Nota_Noua , cast(avg(nota*1.0)as decimal(6,4)) AS MEDIA 
+FROM studenti AS ST, studenti_reusita AS ST_R, discipline AS D, grupe AS GR
+WHERE ST.Id_Student=ST_R.Id_Student 
+AND   D.Id_Disciplina=ST_R.Id_Disciplina
+AND   Disciplina= @DISCIPLINA
+AND   GR.Id_Grupa= ST_R.Id_Grupa
+AND   Tip_Evaluare='Examen' 
+GROUP BY Cod_Grupa, Nume_Student, Prenume_Student, Disciplina, Nota
+ORDER BY MEDIA DESC
+SELECT * FROM discipline
+						    
+ --6. Sa se creeze functii definite de utilizator in baza exercitiilor (2 exercitii) din capitolul 4. Parametrii de intrare 
 --trebuie sa corespunda criteriilor din clauzele WHERE ale exercitiilor respective.
 GO
 CREATE FUNCTION PROF_INFO_DISC(@NR_ORE_PER_DISCIPLINA INT)
