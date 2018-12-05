@@ -31,3 +31,25 @@
 
 ![](https://github.com/nadiusa/Data_Base/blob/master/Lab10/Lam10images/trigger6.PNG)
 
+``SQL 
+ CREATE TRIGGER change_all ON DATABASE
+FOR ALTER_TABLE
+AS
+SET NOCOUNT ON
+DECLARE @Prenume_profesor varchar(30)
+DECLARE @int_I varchar(500)
+DECLARE @int_M varchar(500)
+DECLARE @den_T varchar(50)
+SELECT @Prenume_profesor=EVENTDATA().value('(/EVENT_INSTANCE/AlterTableActionList/*/Columns/Name)[1]','nvarchar(max)')
+IF @Prenume_profesor= 'Prenume_Profesor'
+BEGIN 
+SELECT @int_I = EVENTDATA().value('(/EVENT_INSTANCE/TSQLCommand/CommandText)[1]','nvarchar(max)')
+SELECT @den_T = EVENTDATA().value('(/EVENT_INSTANCE/ObjectName)[1]','nvarchar(max)')
+SELECT @int_M = REPLACE(@int_I, @den_T, 'profesori'); EXECUTE (@int_M)
+SELECT @int_M = REPLACE(@int_I, @den_T, 'profesori_new'); EXECUTE (@int_M)
+PRINT 'Datele au fost modificate in toate tabelele'
+END
+go	
+alter table profesori alter column Prenume_profesor varchar(80)
+``
+
