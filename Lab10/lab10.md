@@ -31,7 +31,7 @@
 
 ![](https://github.com/nadiusa/Data_Base/blob/master/Lab10/Lam10images/trigger6.PNG)
 
-``SQL 
+```SQL 
  CREATE TRIGGER change_all ON DATABASE
 FOR ALTER_TABLE
 AS
@@ -51,5 +51,5 @@ PRINT 'Datele au fost modificate in toate tabelele'
 END
 go	
 alter table profesori alter column Prenume_profesor varchar(80)
-``
+```
 
