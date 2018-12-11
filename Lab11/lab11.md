@@ -3,7 +3,7 @@
 
 *Sarcini Practice
 
-Recuperarea Bazei de date
+Recuperarea Bazei de date*
 
 **1. Sa se creeze un dosar Backup_lab11. Sa se execute un backup complet al bazei de date universitatea in acest dosar. Fisierul copiei de rezerva sa se numeasca exercitiul1.bak. Sa se scrie instructiunea SQL respectiva.**
 
