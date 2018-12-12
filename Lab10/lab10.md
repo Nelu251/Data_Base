@@ -29,7 +29,7 @@
 
 **6. Sa se creeze un declansator DDL care, la modificarea proprietatilor coloanei ld_Profesor dintr-un tabel, ar face schimbari asemanatoare in mod automat in restul tabelelor.**
 
-![](https://github.com/nadiusa/Data_Base/blob/master/Lab10/Lam10images/trigger6.PNG)
+![](https://github.com/nadiusa/Data_Base/blob/master/Lab10/Lam10images/ex6.PNG)
 
 ```SQL 
  CREATE TRIGGER change_all ON DATABASE
