@@ -11,7 +11,7 @@
 
 **2. Sa se scrie instructiunea unui backup diferentiat al bazei de date universitatea. Fisierul copiei de rezerva sa se numeasca exercitiul2.bak.**
 
-![](https://github.com/nadiusa/Data_Base/blob/master/Lab11/lab11photos/11.2.PNG) 
+![](https://raw.githubusercontent.com/nadiusa/Data_Base/master/Lab11/lab11photos/11.3.PNG) 
 
 **3. Sa se scrie instructiunea unui backup al jurnalului de tranzactii al bazei de date universitatea. Fisierul copiei de rezerva sa se numeasca exercitiul3.bak**
 
